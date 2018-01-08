@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Index</title>
+</head>
+<body>
+
+<div>
+    <form action="#" th:action="@{/save}"  method="post"/>
+
+    <br/>
+    <input type="hidden"  th:name="id" th:value="${appUSER.id}" />
+    <br/>
+
+    First name:<br/>
+    <input type="text"  th:name="firstname" th:value="${appUSER.firstName}" />
+    <br/>
+
+    Last name:<br/>
+    <input type="text"  th:name="lastname" th:value="${appUSER.lastName}" />
+    <br/><br/>
+    <input type="submit" value="Submit" />
+
+    </form>
+</div>
+
+
+</body>
+</html>

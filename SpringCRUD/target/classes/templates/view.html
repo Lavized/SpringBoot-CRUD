@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Index</title>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+<div style="width: 600px">
+    <table style="padding: 5px">
+        <tr>
+            <th>Id</th>
+          <td th:text="${appUSER.id}"  ></td>
+        </tr>
+
+        <tr>
+            <th>First Name</th>
+            <td th:text="${appUSER.firstName}"></td>
+        </tr>
+
+        <tr>
+            <th>Last Name</th>
+            <td th:text="${appUSER.lastName}"></td>
+        </tr>
+    </table>
+</div>
+
+<br/> <br/>
+
+<a th:href="@{/index.html}">Back</a>
+
+
+
+
+
+
+</body>
+</html>
